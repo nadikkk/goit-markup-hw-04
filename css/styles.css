@@ -118,32 +118,36 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .header-link-list {
   display: flex;
   column-gap: 30px;
   margin-left: auto;
 }
 .header-link-item {
-    display: flex;
-    column-gap: 10px;
     align-items: center;
     fill: var(--second-text-color);
-    flex-direction: row-reverse;
+    
 }
 
 .header-link {
   color: var(--second-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1,14;
   letter-spacing: 0.02em;
-  
-}
-.header .link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .header-link-icon {
     color: currentColor;
 }
@@ -153,10 +157,9 @@ body {
   color: var(--accent-color);
  
 }
-.header-link:hover + .header-link-icon,
- .header-link:focus + .header-link-icon{
-    color: var(--accent-color);
-    fill: var(--accent-color);
+.header-link-icon {
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 /* hero */
